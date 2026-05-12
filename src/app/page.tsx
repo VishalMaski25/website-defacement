@@ -128,14 +128,25 @@ export default function Home() {
             gap: '2rem' 
           }}>
             {classes.map((item, index) => (
-              <div key={index} className="card">
-                <div className="card-img-container">
+              <div key={index} className="card" style={item.image.includes('science-lab') ? { 
+                background: 'rgba(255, 255, 255, 0.8)',
+                backdropFilter: 'blur(12px)',
+                border: '2px solid transparent',
+                backgroundImage: 'linear-gradient(white, white), linear-gradient(135deg, var(--secondary), var(--accent))',
+                backgroundOrigin: 'border-box',
+                backgroundClip: 'padding-box, border-box',
+                boxShadow: '0 20px 40px rgba(212, 175, 55, 0.2)'
+              } : {}}>
+                <div className="card-img-container" style={{ height: '260px', borderRadius: '16px' }}>
                   <Image 
-                    src={item.image} 
+                    src={item.image.includes('science-lab') ? 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=600' : item.image} 
                     alt={item.title} 
                     fill 
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    style={{ objectFit: 'cover' }}
+                    style={{ 
+                      objectFit: 'cover',
+                      filter: item.image.includes('science-lab') ? 'contrast(1.2) brightness(1.1) saturate(1.1)' : 'none'
+                    }}
                   />
                 </div>
                 <span style={{ color: 'var(--secondary)', fontWeight: '700', fontSize: '0.8rem' }}>{item.level}</span>

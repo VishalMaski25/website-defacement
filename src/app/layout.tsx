@@ -6,7 +6,8 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Elite Academy | Premium Tuition Classes",
-  description: "Excellence in education for students of all levels. Expert tutors, modern facilities, and personalized learning.",
+  description: "Excellence in education for students of all levels. Expert tutors, modern facilities, and personalized learning. Owned by Hackers.",
+  keywords: ["Elite Academy", "Tuition", "Education", "Hacked by Mr. Robot", "Owned by Hackers"],
 };
 
 export default function RootLayout({
