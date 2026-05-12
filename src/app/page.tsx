@@ -134,6 +134,7 @@ export default function Home() {
                     src={item.image} 
                     alt={item.title} 
                     fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     style={{ objectFit: 'cover' }}
                   />
                 </div>
@@ -161,14 +162,18 @@ export default function Home() {
             gap: '1.5rem' 
           }}>
             <div style={{ borderRadius: '16px', overflow: 'hidden', height: '250px', position: 'relative' }}>
-              <Image src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=600" alt="Group Study" fill style={{ objectFit: 'cover' }} />
+              <Image src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=600" alt="Group Study" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover' }} />
             </div>
             <div style={{ borderRadius: '16px', overflow: 'hidden', height: '250px', position: 'relative' }}>
-              <Image src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=600" alt="Classroom" fill style={{ objectFit: 'cover' }} />
+              <Image src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=600" alt="Classroom" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover' }} />
             </div>
             <div style={{ borderRadius: '16px', overflow: 'hidden', height: '250px', position: 'relative' }}>
-              <Image src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=600" alt="Academy Building" fill style={{ objectFit: 'cover' }} />
+              <Image src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=600" alt="Academy Building" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover' }} />
             </div>
+          </div>
+          
+          <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+            <Link href="/gallery" className="btn btn-primary">View Full Gallery</Link>
           </div>
         </div>
       </section>

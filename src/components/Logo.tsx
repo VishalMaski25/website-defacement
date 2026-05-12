@@ -9,7 +9,7 @@ export default function Logo({ width = 150, height = 50 }: { width?: number; hei
         alt="Elite Academy Logo" 
         width={width} 
         height={height} 
-        style={{ objectFit: 'contain' }}
+        style={{ objectFit: 'contain', height: 'auto' }}
       />
       <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--primary)' }}>Elite Academy</span>
     </Link>

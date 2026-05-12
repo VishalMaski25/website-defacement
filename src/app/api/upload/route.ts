@@ -1,42 +1,9 @@
-import { NextRequest, NextResponse } from 'next/server';
-import multer from 'multer';
+import { NextResponse } from 'next/server';
 import path from 'path';
 import fs from 'fs';
 
-// Configure multer for disk storage
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    const uploadDir = './uploads';
-    if (!fs.existsSync(uploadDir)) {
-      fs.mkdirSync(uploadDir);
-    }
-    cb(null, uploadDir);
-  },
-  filename: function (req, file, cb) {
-    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1e9);
-    cb(null, file.fieldname + '-' + uniqueSuffix + path.extname(file.originalname));
-  }
-});
-
-const upload = multer({ storage: storage });
-
-// Helper to run multer middleware in Next.js App Router
-function runMiddleware(req: any, res: any, fn: any) {
-  return new Promise((resolve, reject) => {
-    fn(req, res, (result: any) => {
-      if (result instanceof Error) {
-        return reject(result);
-      }
-      return resolve(result);
-    });
-  });
-}
-
-export const config = {
-  api: {
-    bodyParser: false, // Disallow body parsing, let multer handle it
-  },
-};
+// Allow longer execution time for file uploads (default is 30s)
+export const maxDuration = 60;
 
 export async function POST(req: Request) {
   try {
