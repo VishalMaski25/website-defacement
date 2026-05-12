@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/Footer";
+import SecurityAudit from "@/components/SecurityAudit";
 
 export const metadata: Metadata = {
   title: "Elite Academy | Premium Tuition Classes",
@@ -45,6 +46,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <SecurityAudit />
       </body>
     </html>
   );
