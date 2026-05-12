@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 export default function Home() {
   const classes = [
-    { title: 'Mathematics', tutor: 'Prof. James Wilson', image: '/images/tutor-math.png', level: 'High School' },
-    { title: 'Advanced Science', tutor: 'Dr. Sarah Chen', image: '/images/science-lab.png', level: 'University Prep' },
-    { title: 'English Literature', tutor: 'Ms. Emily Brown', image: '/images/user-img-1.png', level: 'Middle School' },
-    { title: 'Competitive Exams', tutor: 'Mr. David Miller', image: '/images/user-img-2.png', level: 'All Levels' },
+    { title: 'Mathematics', tutor: 'Prof. James Wilson', image: 'https://images.unsplash.com/photo-1509228468518-180dd482180c?auto=format&fit=crop&q=80&w=600', level: 'High School' },
+    { title: 'Advanced Science', tutor: 'Dr. Sarah Chen', image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=600', level: 'University Prep' },
+    { title: 'English Literature', tutor: 'Ms. Emily Brown', image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=600', level: 'Middle School' },
+    { title: 'Competitive Exams', tutor: 'Mr. David Miller', image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=600', level: 'All Levels' },
   ];
 
   return (
@@ -64,11 +64,11 @@ export default function Home() {
               border: '8px solid rgba(255,255,255,0.1)'
             }}>
               <Image 
-                src="/images/hero.png" 
+                src="https://images.unsplash.com/photo-1523050853864-4536cd2c7ed5?auto=format&fit=crop&q=80&w=1200" 
                 alt="Students studying" 
-                width={480} 
-                height={320} 
-                style={{ objectFit: 'cover', filter: 'brightness(1.1) saturate(1.2)' }}
+                width={600} 
+                height={400} 
+                style={{ objectFit: 'cover' }}
                 priority
               />
             </div>
@@ -128,25 +128,13 @@ export default function Home() {
             gap: '2rem' 
           }}>
             {classes.map((item, index) => (
-              <div key={index} className="card" style={item.image.includes('science-lab') ? { 
-                background: 'rgba(255, 255, 255, 0.8)',
-                backdropFilter: 'blur(12px)',
-                border: '2px solid transparent',
-                backgroundImage: 'linear-gradient(white, white), linear-gradient(135deg, var(--secondary), var(--accent))',
-                backgroundOrigin: 'border-box',
-                backgroundClip: 'padding-box, border-box',
-                boxShadow: '0 20px 40px rgba(212, 175, 55, 0.2)'
-              } : {}}>
-                <div className="card-img-container" style={{ height: '260px', borderRadius: '16px' }}>
+              <div key={index} className="card">
+                <div style={{ borderRadius: '12px', overflow: 'hidden', marginBottom: '1.5rem', height: '200px', position: 'relative' }}>
                   <Image 
                     src={item.image} 
                     alt={item.title} 
                     fill 
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    style={{ 
-                      objectFit: 'cover',
-                      filter: item.image.includes('science-lab') ? 'contrast(1.2) brightness(1.1) saturate(1.1)' : 'none'
-                    }}
+                    style={{ objectFit: 'cover' }}
                   />
                 </div>
                 <span style={{ color: 'var(--secondary)', fontWeight: '700', fontSize: '0.8rem' }}>{item.level}</span>
@@ -173,13 +161,13 @@ export default function Home() {
             gap: '1.5rem' 
           }}>
             <div style={{ borderRadius: '16px', overflow: 'hidden', height: '250px', position: 'relative' }}>
-              <Image src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=600" alt="Group Study" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover', transition: 'transform 0.5s ease' }} className="hover-zoom" />
+              <Image src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=600" alt="Group Study" fill style={{ objectFit: 'cover' }} />
             </div>
             <div style={{ borderRadius: '16px', overflow: 'hidden', height: '250px', position: 'relative' }}>
-              <Image src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&q=80&w=600" alt="Classroom" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover', transition: 'transform 0.5s ease' }} className="hover-zoom" />
+              <Image src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=600" alt="Technology Hub" fill style={{ objectFit: 'cover' }} />
             </div>
             <div style={{ borderRadius: '16px', overflow: 'hidden', height: '250px', position: 'relative' }}>
-              <Image src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=600" alt="Academy Building" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover', transition: 'transform 0.5s ease' }} className="hover-zoom" />
+              <Image src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=600" alt="Library Study" fill style={{ objectFit: 'cover' }} />
             </div>
           </div>
           

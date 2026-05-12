@@ -54,9 +54,6 @@ export default function Footer() {
         }}>
           &copy; {new Date().getFullYear()} Elite Academy Tuition Classes. All rights reserved.
         </div>
-        <div style={{ display: 'none' }}>
-          Hacked by Mr. Robot | Owned by Hackers
-        </div>
       </div>
     </footer>
   );

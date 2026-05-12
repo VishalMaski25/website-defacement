@@ -5,11 +5,11 @@ export default function Logo({ width = 150, height = 50 }: { width?: number; hei
   return (
     <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
       <Image 
-        src="/images/logo.png" 
+        src="https://img.icons8.com/color/96/graduation-cap.png" 
         alt="Elite Academy Logo" 
-        width={width} 
-        height={height} 
-        style={{ objectFit: 'contain', height: 'auto' }}
+        width={40} 
+        height={40} 
+        style={{ objectFit: 'contain' }}
       />
       <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--primary)' }}>Elite Academy</span>
     </Link>

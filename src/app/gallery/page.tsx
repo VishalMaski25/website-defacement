@@ -1,69 +1,67 @@
-"use client";
-
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Gallery() {
   const images = [
     {
-      url: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800',
-      title: 'Collaborative Learning',
-      category: 'Campus Life'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800',
-      title: 'Modern Classrooms',
+      url: 'https://images.unsplash.com/photo-1523050853864-4536cd2c7ed5?auto=format&fit=crop&q=80&w=800',
+      title: 'Modern Study Spaces',
       category: 'Facilities'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=800',
-      title: 'Elite Academy Main Building',
-      category: 'Facilities'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800',
-      title: 'Science & Innovation Lab',
-      category: 'Academics'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800',
-      title: 'Student Group Discussions',
-      category: 'Campus Life'
     },
     {
       url: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800',
-      title: 'Expert Faculty Seminars',
+      title: 'Expert Faculty Lectures',
       category: 'Academics'
     },
     {
       url: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800',
-      title: 'Coding & Technology Hub',
+      title: 'Tech & Coding Hub',
       category: 'Facilities'
     },
     {
-      url: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&q=80&w=800',
-      title: 'Library Study Spaces',
+      url: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=800',
+      title: 'Quiet Study Library',
       category: 'Facilities'
     },
     {
-      url: 'https://images.unsplash.com/photo-1523050335392-93851179ae22?auto=format&fit=crop&q=80&w=800',
-      title: 'Graduation Ceremony',
-      category: 'Events'
+      url: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800',
+      title: 'Collaborative Projects',
+      category: 'Campus Life'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800',
+      title: 'Student Group Discussions',
+      category: 'Campus Life'
     },
     {
       url: 'https://images.unsplash.com/photo-1511629091441-ee46146481b6?auto=format&fit=crop&q=80&w=800',
-      title: 'Art & Creativity Studio',
+      title: 'Art & Design Studio',
       category: 'Academics'
     },
     {
+      url: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=800',
+      title: 'Advanced Science Research',
+      category: 'Academics'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1523050335392-93851179ae22?auto=format&fit=crop&q=80&w=800',
+      title: 'Annual Graduation Day',
+      category: 'Events'
+    },
+    {
       url: 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800',
-      title: 'Sports & Athletics',
+      title: 'Athletic Excellence',
       category: 'Events'
     },
     {
       url: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800',
-      title: 'Workshop Sessions',
+      title: 'Interactive Workshops',
       category: 'Academics'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800',
+      title: 'Innovation Lab',
+      category: 'Facilities'
     }
   ];
 
@@ -99,7 +97,6 @@ export default function Gallery() {
                   src={img.url} 
                   alt={img.title} 
                   fill 
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{ objectFit: 'cover' }}
                   className="gallery-img"
                 />
@@ -147,15 +144,8 @@ export default function Gallery() {
 
       <style jsx>{`
         .gallery-card:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2);
-        }
-        .gallery-card:hover .gallery-img {
-          transform: scale(1.1);
-          filter: brightness(1.1);
-        }
-        .gallery-img {
-          transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+          transform: translateY(-5px);
+          box-shadow: var(--shadow-lg);
         }
         .gallery-card:hover div {
           transform: translateY(0);
