@@ -66,9 +66,9 @@ export default function Home() {
               <Image 
                 src="/images/hero.png" 
                 alt="Students studying" 
-                width={600} 
-                height={400} 
-                style={{ objectFit: 'cover' }}
+                width={480} 
+                height={320} 
+                style={{ objectFit: 'cover', filter: 'brightness(1.1) saturate(1.2)' }}
                 priority
               />
             </div>
@@ -129,7 +129,7 @@ export default function Home() {
           }}>
             {classes.map((item, index) => (
               <div key={index} className="card">
-                <div style={{ borderRadius: '12px', overflow: 'hidden', marginBottom: '1.5rem', height: '200px', position: 'relative' }}>
+                <div className="card-img-container">
                   <Image 
                     src={item.image} 
                     alt={item.title} 

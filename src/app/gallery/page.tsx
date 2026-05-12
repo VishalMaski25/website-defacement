@@ -147,8 +147,15 @@ export default function Gallery() {
 
       <style jsx>{`
         .gallery-card:hover {
-          transform: translateY(-5px);
-          box-shadow: var(--shadow-lg);
+          transform: translateY(-10px);
+          box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2);
+        }
+        .gallery-card:hover .gallery-img {
+          transform: scale(1.1);
+          filter: brightness(1.1);
+        }
+        .gallery-img {
+          transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
         }
         .gallery-card:hover div {
           transform: translateY(0);
