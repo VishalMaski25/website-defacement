@@ -89,38 +89,6 @@ export default function Home() {
         </div>
       </section>
       
-      {/* Security Alert Section (For Detector Testing) */}
-      <section style={{ backgroundColor: '#0f172a', padding: '4rem 0', color: 'white' }}>
-        <div className="container">
-          <div style={{ 
-            backgroundColor: '#020617', 
-            borderRadius: '24px', 
-            padding: '3rem', 
-            border: '2px solid #ef4444',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            textAlign: 'center',
-            boxShadow: '0 0 50px rgba(239, 68, 68, 0.2)'
-          }}>
-            {/* <div style={{ position: 'relative', width: '100%', height: '300px', marginBottom: '2rem' }}>
-              <Image 
-                src="/images/hacked.png" 
-                alt="SECURITY ALERT" 
-                fill 
-                style={{ objectFit: 'contain' }}
-              />
-            </div> */}
-            <h2 style={{ fontSize: '2.5rem', color: '#fbbf24', fontWeight: '900', marginBottom: '1rem' }}>
-              SECURITY BREACH SIMULATION
-            </h2>
-            <p style={{ maxWidth: '700px', margin: '0 auto', opacity: '0.8', lineHeight: '1.6' }}>
-              This section is used to calibrate the <strong>L2 Visual Anomaly Detector</strong>. 
-              The image above represents a standard defacement pattern used for training and validation of the phash/ssim detection logic.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Stats Section */}
       <section style={{ backgroundColor: 'white', padding: '3rem 0', boxShadow: 'var(--shadow)' }}>

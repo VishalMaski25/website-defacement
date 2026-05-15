@@ -16,15 +16,6 @@ export default function HackedPage() {
       fontFamily: 'monospace',
       padding: '2rem'
     }}>
-      {/* <div style={{ position: 'relative', width: '300px', height: '250px', marginBottom: '2rem' }}>
-        <Image 
-          src="/images/hacked.png" 
-          alt="." 
-          fill
-          priority
-          style={{ objectFit: 'contain' }}
-        />
-      </div> */}
       
       <h1 style={{ 
         fontSize: '4rem', 

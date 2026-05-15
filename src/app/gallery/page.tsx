@@ -5,11 +5,6 @@ import Link from 'next/link';
 
 export default function Gallery() {
   const images = [
-    // {
-    //   url: '/images/hacked.png',
-    //   title: 'Security Alert Simulation',
-    //   category: 'Security'
-    // },
     {
       url: '/images/Screenshot 2026-05-15 110727.png',
       title: 'Platform Overview',

@@ -33,7 +33,6 @@ export default function Navbar() {
           <Link href="/about" className="nav-link">About</Link>
           <Link href="/gallery" className="nav-link">Gallery</Link>
           <Link href="/contact" className="nav-link">Contact</Link>
-        
           <Link href="/payment" className="btn btn-primary" style={{ padding: '0.5rem 1.25rem' }}>Join Now</Link>
         </div>
       </div>
