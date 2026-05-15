@@ -120,3 +120,35 @@ button {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
 }
+
+.gallery-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 350px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.gallery-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 1.5rem 1.5rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+  opacity: 0.9;
+}
+
+.gallery-card:hover .gallery-info {
+  transform: translateY(0);
+}

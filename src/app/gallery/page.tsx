@@ -84,15 +84,7 @@ export default function Gallery() {
             gap: '2rem' 
           }}>
             {images.map((img, index) => (
-              <div key={index} className="gallery-card" style={{
-                position: 'relative',
-                borderRadius: '20px',
-                overflow: 'hidden',
-                height: '350px',
-                boxShadow: 'var(--shadow)',
-                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                cursor: 'pointer'
-              }}>
+              <div key={index} className="gallery-card">
                 <Image 
                   src={img.url} 
                   alt={img.title} 
@@ -101,18 +93,7 @@ export default function Gallery() {
                   style={{ objectFit: 'cover' }}
                   className="gallery-img"
                 />
-                <div style={{
-                  position: 'absolute',
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  padding: '2rem 1.5rem 1.5rem',
-                  background: 'linear-gradient(transparent, rgba(0,0,0,0.8))',
-                  color: 'white',
-                  transform: 'translateY(10px)',
-                  transition: 'transform 0.3s ease',
-                  opacity: 0.9
-                }}>
+                <div className="gallery-info">
                   <span style={{ 
                     fontSize: '0.7rem', 
                     fontWeight: '700', 
@@ -142,16 +123,6 @@ export default function Gallery() {
           </div>
         </div>
       </section>
-
-      <style jsx>{`
-        .gallery-card:hover {
-          transform: translateY(-5px);
-          box-shadow: var(--shadow-lg);
-        }
-        .gallery-card:hover div {
-          transform: translateY(0);
-        }
-      `}</style>
     </div>
   );
 }
