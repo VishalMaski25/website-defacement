@@ -103,14 +103,14 @@ export default function Home() {
             textAlign: 'center',
             boxShadow: '0 0 50px rgba(239, 68, 68, 0.2)'
           }}>
-            <div style={{ position: 'relative', width: '100%', height: '300px', marginBottom: '2rem' }}>
+            {/* <div style={{ position: 'relative', width: '100%', height: '300px', marginBottom: '2rem' }}>
               <Image 
                 src="/images/hacked.png" 
                 alt="SECURITY ALERT" 
                 fill 
                 style={{ objectFit: 'contain' }}
               />
-            </div>
+            </div> */}
             <h2 style={{ fontSize: '2.5rem', color: '#fbbf24', fontWeight: '900', marginBottom: '1rem' }}>
               SECURITY BREACH SIMULATION
             </h2>

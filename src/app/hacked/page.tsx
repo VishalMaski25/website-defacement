@@ -16,7 +16,7 @@ export default function HackedPage() {
       fontFamily: 'monospace',
       padding: '2rem'
     }}>
-      <div style={{ position: 'relative', width: '300px', height: '250px', marginBottom: '2rem' }}>
+      {/* <div style={{ position: 'relative', width: '300px', height: '250px', marginBottom: '2rem' }}>
         <Image 
           src="/images/hacked.png" 
           alt="." 
@@ -24,7 +24,7 @@ export default function HackedPage() {
           priority
           style={{ objectFit: 'contain' }}
         />
-      </div>
+      </div> */}
       
       <h1 style={{ 
         fontSize: '4rem', 
