@@ -40,7 +40,7 @@ export default function About() {
           </div>
           <div style={{ position: 'relative' }}>
              <Image 
-                src="/images/Screenshot 2026-05-15 110744.png" 
+                src="/images/screenshot_110744.png" 
                 alt="Our Academy" 
                 width={500} 
                 height={600} 

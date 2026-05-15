@@ -6,17 +6,17 @@ import Link from 'next/link';
 export default function Gallery() {
   const images = [
     {
-      url: '/images/Screenshot 2026-05-15 110727.png',
+      url: '/images/screenshot_110727.png',
       title: 'Platform Overview',
       category: 'Monitoring'
     },
     {
-      url: '/images/Screenshot 2026-05-15 110744.png',
+      url: '/images/screenshot_110744.png',
       title: 'Detection Logic',
       category: 'Analytics'
     },
     {
-      url: '/images/Screenshot 2026-05-15 110804.png',
+      url: '/images/screenshot_110804.png',
       title: 'Alert History',
       category: 'Logs'
     },
