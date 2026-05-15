@@ -1,3 +1,5 @@
+'use client';
+
 export default function Payment() {
   const plans = [
     { name: 'Basic', price: '$99', period: 'month', features: ['2 Subjects', 'Weekly Sessions', 'Basic Study Materials', 'Email Support'] },

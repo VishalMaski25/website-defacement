@@ -45,10 +45,10 @@ export default function Sidebar() {
         </div>
 
         <nav style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-          <Link href="/" className="sidebar-link" onClick={() => setIsOpen(false)}>🏠 Home</Link>
-          <Link href="/about" className="sidebar-link" onClick={() => setIsOpen(false)}>ℹ️ About Us</Link>
-          <Link href="/contact" className="sidebar-link" onClick={() => setIsOpen(false)}>📞 Contact</Link>
-          <Link href="/payment" className="sidebar-link" onClick={() => setIsOpen(false)}>💳 Payment</Link>
+          <Link href="/" style={{ fontSize: '1.1rem', fontWeight: 500, color: 'var(--text)' }} onClick={() => setIsOpen(false)}>🏠 Home</Link>
+          <Link href="/about" style={{ fontSize: '1.1rem', fontWeight: 500, color: 'var(--text)' }} onClick={() => setIsOpen(false)}>ℹ️ About Us</Link>
+          <Link href="/contact" style={{ fontSize: '1.1rem', fontWeight: 500, color: 'var(--text)' }} onClick={() => setIsOpen(false)}>📞 Contact</Link>
+          <Link href="/payment" style={{ fontSize: '1.1rem', fontWeight: 500, color: 'var(--text)' }} onClick={() => setIsOpen(false)}>💳 Payment</Link>
           <hr style={{ border: '0', borderTop: '1px solid var(--border)', margin: '1rem 0' }} />
           <div style={{ padding: '1rem', backgroundColor: '#f1f5f9', borderRadius: '12px' }}>
             <h4 style={{ fontSize: '0.9rem', color: 'var(--primary)', marginBottom: '0.5rem' }}>Upcoming Class</h4>
@@ -70,24 +70,6 @@ export default function Sidebar() {
         />
       )}
 
-      <style jsx>{`
-        .sidebar-link {
-          font-size: 1.1rem;
-          font-weight: 500;
-          color: var(--text);
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          padding: 0.75rem 1rem;
-          border-radius: 8px;
-          transition: var(--transition);
-        }
-        .sidebar-link:hover {
-          background-color: var(--background);
-          color: var(--primary);
-          padding-left: 1.5rem;
-        }
-      `}</style>
     </>
   );
 }

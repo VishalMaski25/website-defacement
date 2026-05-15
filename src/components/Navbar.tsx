@@ -29,24 +29,13 @@ export default function Navbar() {
           gap: '2rem',
           alignItems: 'center'
         }}>
-          <Link href="/" className="nav-link">Home</Link>
-          <Link href="/about" className="nav-link">About</Link>
-          <Link href="/gallery" className="nav-link">Gallery</Link>
-          <Link href="/contact" className="nav-link">Contact</Link>
+          <Link href="/" style={{ fontWeight: 500, color: 'var(--text)' }}>Home</Link>
+          <Link href="/about" style={{ fontWeight: 500, color: 'var(--text)' }}>About</Link>
+          <Link href="/gallery" style={{ fontWeight: 500, color: 'var(--text)' }}>Gallery</Link>
+          <Link href="/contact" style={{ fontWeight: 500, color: 'var(--text)' }}>Contact</Link>
           <Link href="/payment" className="btn btn-primary" style={{ padding: '0.5rem 1.25rem' }}>Join Now</Link>
         </div>
       </div>
-
-      <style jsx>{`
-        .nav-link {
-          font-weight: 500;
-          color: var(--text);
-          transition: var(--transition);
-        }
-        .nav-link:hover {
-          color: var(--primary);
-        }
-      `}</style>
     </nav>
   );
 }
