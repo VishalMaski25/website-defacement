@@ -1,8 +1,15 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Gallery() {
   const images = [
+    {
+      url: '/images/hacked.png',
+      title: 'Security Alert Simulation',
+      category: 'System'
+    },
     {
       url: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800',
       title: 'Modern Study Spaces',
@@ -92,6 +99,12 @@ export default function Gallery() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{ objectFit: 'cover' }}
                   className="gallery-img"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    if (img.url === '/images/hacked.png') {
+                      target.src = "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800";
+                    }
+                  }}
                 />
                 <div className="gallery-info">
                   <span style={{ 
