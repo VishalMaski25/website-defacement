@@ -14,7 +14,8 @@ export default function HackedPage() {
       color: '#fbbf24',
       textAlign: 'center',
       fontFamily: 'monospace',
-      padding: '2rem'
+      padding: '2rem' 
+      
     }}>
       
       <h1 style={{ 
