@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Gallery() {
   const images = [
     {
-      url: 'https://images.unsplash.com/photo-1523050853864-4536cd2c7ed5?auto=format&fit=crop&q=80&w=800',
+      url: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800',
       title: 'Modern Study Spaces',
       category: 'Facilities'
     },
@@ -97,6 +97,7 @@ export default function Gallery() {
                   src={img.url} 
                   alt={img.title} 
                   fill 
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{ objectFit: 'cover' }}
                   className="gallery-img"
                 />

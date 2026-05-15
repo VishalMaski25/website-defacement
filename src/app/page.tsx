@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Home() {
   const classes = [
-    { title: 'Mathematics', tutor: 'Prof. James Wilson', image: 'https://images.unsplash.com/photo-1509228468518-180dd482180c?auto=format&fit=crop&q=80&w=600', level: 'High School' },
+    { title: 'Mathematics', tutor: 'Prof. James Wilson', image: 'https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?auto=format&fit=crop&q=80&w=600', level: 'High School' },
     { title: 'Advanced Science', tutor: 'Dr. Sarah Chen', image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=600', level: 'University Prep' },
     { title: 'English Literature', tutor: 'Ms. Emily Brown', image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=600', level: 'Middle School' },
     { title: 'Competitive Exams', tutor: 'Mr. David Miller', image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=600', level: 'All Levels' },
@@ -64,7 +64,7 @@ export default function Home() {
               border: '8px solid rgba(255,255,255,0.1)'
             }}>
               <Image 
-                src="https://images.unsplash.com/photo-1523050853864-4536cd2c7ed5?auto=format&fit=crop&q=80&w=1200" 
+                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=1200" 
                 alt="Students studying" 
                 width={600} 
                 height={400} 
@@ -134,6 +134,7 @@ export default function Home() {
                     src={item.image} 
                     alt={item.title} 
                     fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     style={{ objectFit: 'cover' }}
                   />
                 </div>
@@ -161,13 +162,13 @@ export default function Home() {
             gap: '1.5rem' 
           }}>
             <div style={{ borderRadius: '16px', overflow: 'hidden', height: '250px', position: 'relative' }}>
-              <Image src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=600" alt="Group Study" fill style={{ objectFit: 'cover' }} />
+              <Image src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=600" alt="Group Study" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover' }} />
             </div>
             <div style={{ borderRadius: '16px', overflow: 'hidden', height: '250px', position: 'relative' }}>
-              <Image src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=600" alt="Technology Hub" fill style={{ objectFit: 'cover' }} />
+              <Image src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=600" alt="Technology Hub" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover' }} />
             </div>
             <div style={{ borderRadius: '16px', overflow: 'hidden', height: '250px', position: 'relative' }}>
-              <Image src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=600" alt="Library Study" fill style={{ objectFit: 'cover' }} />
+              <Image src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=600" alt="Library Study" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover' }} />
             </div>
           </div>
           
