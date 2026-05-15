@@ -19,14 +19,10 @@ export default function HackedPage() {
       <div style={{ position: 'relative', width: '300px', height: '250px', marginBottom: '2rem' }}>
         <Image 
           src="/images/hacked.png" 
-          alt="ACCOUNT HACKED" 
+          alt="." 
           fill
           priority
           style={{ objectFit: 'contain' }}
-          onError={(e) => {
-            const target = e.target as HTMLImageElement;
-            target.src = "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800";
-          }}
         />
       </div>
       
@@ -37,7 +33,7 @@ export default function HackedPage() {
         margin: '0',
         textShadow: '0 0 20px rgba(251, 191, 36, 0.5)'
       }}>
-        ACCOUNT HACKED
+       
       </h1>
       
       <div style={{ 

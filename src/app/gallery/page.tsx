@@ -8,67 +8,27 @@ export default function Gallery() {
     {
       url: '/images/hacked.png',
       title: 'Security Alert Simulation',
-      category: 'System'
+      category: 'Security'
     },
     {
-      url: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800',
-      title: 'Modern Study Spaces',
-      category: 'Facilities'
+      url: '/images/Screenshot 2026-05-15 110727.png',
+      title: 'Platform Overview',
+      category: 'Monitoring'
     },
     {
-      url: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800',
-      title: 'Expert Faculty Lectures',
-      category: 'Academics'
+      url: '/images/Screenshot 2026-05-15 110744.png',
+      title: 'Detection Logic',
+      category: 'Analytics'
     },
     {
-      url: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800',
-      title: 'Tech & Coding Hub',
-      category: 'Facilities'
+      url: '/images/Screenshot 2026-05-15 110804.png',
+      title: 'Alert History',
+      category: 'Logs'
     },
     {
-      url: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=800',
-      title: 'Quiet Study Library',
-      category: 'Facilities'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800',
-      title: 'Collaborative Projects',
-      category: 'Campus Life'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800',
-      title: 'Student Group Discussions',
-      category: 'Campus Life'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1511629091441-ee46146481b6?auto=format&fit=crop&q=80&w=800',
-      title: 'Art & Design Studio',
-      category: 'Academics'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=800',
-      title: 'Advanced Science Research',
-      category: 'Academics'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1523050335392-93851179ae22?auto=format&fit=crop&q=80&w=800',
-      title: 'Annual Graduation Day',
-      category: 'Events'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800',
-      title: 'Athletic Excellence',
-      category: 'Events'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800',
-      title: 'Interactive Workshops',
-      category: 'Academics'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800',
-      title: 'Innovation Lab',
-      category: 'Facilities'
+      url: '/globe.svg',
+      title: 'Global Network',
+      category: 'Infrastructure'
     }
   ];
 
@@ -99,12 +59,6 @@ export default function Gallery() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{ objectFit: 'cover' }}
                   className="gallery-img"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    if (img.url === '/images/hacked.png') {
-                      target.src = "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800";
-                    }
-                  }}
                 />
                 <div className="gallery-info">
                   <span style={{ 

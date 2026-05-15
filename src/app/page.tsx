@@ -5,10 +5,10 @@ import Link from 'next/link';
 
 export default function Home() {
   const classes = [
-    { title: 'Mathematics', tutor: 'Prof. James Wilson', image: 'https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?auto=format&fit=crop&q=80&w=600', level: 'High School' },
-    { title: 'Advanced Science', tutor: 'Dr. Sarah Chen', image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=600', level: 'University Prep' },
-    { title: 'English Literature', tutor: 'Ms. Emily Brown', image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=600', level: 'Middle School' },
-    { title: 'Competitive Exams', tutor: 'Mr. David Miller', image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=600', level: 'All Levels' },
+    { title: 'Visual Detection', tutor: 'Security Engine', image: '/images/Screenshot 2026-05-15 110744.png', level: 'Advanced' },
+    { title: 'Anomaly Analysis', tutor: 'Core Analytics', image: '/images/Screenshot 2026-05-15 110804.png', level: 'Real-time' },
+    { title: 'Infrastructure', tutor: 'Network Ops', image: '/globe.svg', level: 'Global' },
+    { title: 'Interface Design', tutor: 'UI/UX Team', image: '/window.svg', level: 'User-centric' },
   ];
 
   return (
@@ -66,8 +66,8 @@ export default function Home() {
               border: '8px solid rgba(255,255,255,0.1)'
             }}>
               <Image 
-                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=1200" 
-                alt="Students studying" 
+                src="/images/Screenshot 2026-05-15 110727.png" 
+                alt="System Monitoring" 
                 width={600} 
                 height={400} 
                 style={{ objectFit: 'cover' }}
@@ -109,10 +109,6 @@ export default function Home() {
                 alt="SECURITY ALERT" 
                 fill 
                 style={{ objectFit: 'contain' }}
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.src = "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800";
-                }}
               />
             </div>
             <h2 style={{ fontSize: '2.5rem', color: '#fbbf24', fontWeight: '900', marginBottom: '1rem' }}>
@@ -201,13 +197,13 @@ export default function Home() {
             gap: '1.5rem' 
           }}>
             <div style={{ borderRadius: '16px', overflow: 'hidden', height: '250px', position: 'relative' }}>
-              <Image src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=600" alt="Group Study" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover' }} />
+              <Image src="/file.svg" alt="Documentation" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'contain', padding: '2rem' }} />
             </div>
             <div style={{ borderRadius: '16px', overflow: 'hidden', height: '250px', position: 'relative' }}>
-              <Image src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=600" alt="Technology Hub" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover' }} />
+              <Image src="/next.svg" alt="Next.js Framework" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'contain', padding: '2rem' }} />
             </div>
             <div style={{ borderRadius: '16px', overflow: 'hidden', height: '250px', position: 'relative' }}>
-              <Image src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=600" alt="Library Study" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'cover' }} />
+              <Image src="/vercel.svg" alt="Deployment" fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: 'contain', padding: '2rem' }} />
             </div>
           </div>
           
